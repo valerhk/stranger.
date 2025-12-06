@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:black ;
+}
+
+header {
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+nav {
+    background-color: #f0ff98;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+nav img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #F28377;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, green, white, yellow);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px 5px grey;
+    font-size: 3em;
+    margin: 30px 0;
+    color: #89180C;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 40px 0 30px;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+.content-section {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    background-color: #517E0B;
+    border-radius: 20px;
+    border: 10px solid yellow;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+    background-color:  #0b7e28;
+}
+
+.text-block {
+    flex: 1;
+    color: white;
+    font-size: 1.1em;
+}
+
+.content-section img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 10px solid yellow;
+    opacity: 0.4;
+    transition: all 0.5s ease;
+}
+
+.content-section img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.chapters-section {
+    padding: 40px 20px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: ;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 10px dotted yellow;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+     .content-section,
+     .content-section.reverse{
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .seasons-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
